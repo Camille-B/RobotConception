@@ -26,3 +26,9 @@
 *.exe
 *.out
 *.app
+
+# IDE
+*.cbp
+/obj/*
+/bin/*
+*.layout
