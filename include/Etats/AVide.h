@@ -7,7 +7,7 @@
 class AVide : public EnRoute
 {
     public:
-        virtual void avancer();
+        virtual void avancer(int,int);
         virtual void rencontrerPlot(Plot p);
         virtual void tourner();
 

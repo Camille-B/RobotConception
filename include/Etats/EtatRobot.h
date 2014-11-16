@@ -19,7 +19,7 @@ class EtatRobot
         virtual std::string nom_etat() const = 0;
 
         /* Méthodes du robot */
-        virtual void avancer();
+        virtual void avancer(int,int);
         virtual void figer();
         virtual void poser();
         virtual void rencontrerPlot(Plot p);
@@ -35,5 +35,7 @@ class EtatRobot
         Robot* _robot;
 
 };
+
+class ImpossibleToExecute{};
 
 #endif // ETATROBOT_H
