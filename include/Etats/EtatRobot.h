@@ -11,7 +11,7 @@ class Robot;
 class EtatRobot
 {
     public:
-        static EtatRobot* _instanceInit = AVide::instance();
+        static EtatRobot* _instanceInit;
         static EtatRobot* instanceInit(){return EtatRobot::_instanceInit;}
 
         EtatRobot();
@@ -27,10 +27,6 @@ class EtatRobot
         virtual EtatRobot* tourner();
         virtual EtatRobot* peser();
         virtual EtatRobot* evaluerPlot();
-
-    protected:
-        Robot* _robot;
-
 };
 
 class ImpossibleToExecute{};

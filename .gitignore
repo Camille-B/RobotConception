@@ -32,3 +32,4 @@
 /obj/*
 /bin/*
 *.layout
+*.depend

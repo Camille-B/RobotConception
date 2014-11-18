@@ -2,9 +2,40 @@
 #include <map>
 #include <string>
 
-map<std::string, EtatRobot*> EtatRobot::_instance;
+EtatRobot* EtatRobot::_instanceInit = AVide::instance();
 
-EtatRobot::EtatRobot(Robot* robot, std::string etat){
-    _robot = robot;
-    EtatRobot::_instance[etat] = this;
+EtatRobot* avancer(int,int){
+    throw ImpossibleToExecute();
+}
+
+EtatRobot* figer(){
+    throw ImpossibleToExecute();
+}
+
+EtatRobot* poser(){
+    throw ImpossibleToExecute();
+}
+
+EtatRobot* rencontrerPlot(Plot p){
+    throw ImpossibleToExecute();
+}
+
+EtatRobot* repartir(){
+    throw ImpossibleToExecute();
+}
+
+EtatRobot* saisir(Objet o){
+    throw ImpossibleToExecute();
+}
+
+EtatRobot* tourner(){
+    throw ImpossibleToExecute();
+}
+
+EtatRobot* peser(){
+    throw ImpossibleToExecute();
+}
+
+EtatRobot* evaluerPlot(){
+    throw ImpossibleToExecute();
 }
