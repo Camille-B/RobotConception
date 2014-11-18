@@ -15,6 +15,13 @@ void figer(){
 
 }
 void poser(){
+	try{
+		_etat_courant = _etat_courant.poser();
+	}catch(EtatRobot.poser e){
+		//Traitement de l'erreur
+		//cerr << e....
+	}
+
 
 }
 void rencontrerPlot(Plot p){
@@ -53,5 +60,5 @@ void direction(int d){
 
 }
 void position(Position p){
-	
+
 }
