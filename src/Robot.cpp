@@ -17,6 +17,7 @@ void figer(){
 void poser(){
 	try{
 		_etat_courant = _etat_courant.poser();
+		objet(null);
 	}catch(EtatRobot.poser e){
 		//Traitement de l'erreur
 		//cerr << e....
@@ -25,6 +26,13 @@ void poser(){
 
 }
 void rencontrerPlot(Plot p){
+	try{
+		_etat_courant = _etat_courant.rencontrerPlot();
+		plot(p);
+	}catch(EtatRobot.rencontrerPlot e){
+		//Traitement de l'erreur
+		//cerr << e....
+	}
 
 }
 void repartir(){
