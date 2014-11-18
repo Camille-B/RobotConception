@@ -14,7 +14,7 @@ class Fige : public EtatRobot
         static Fige* instance();
 
     private:
-        Fige(Robot* robot = NULL, std::string dernier_etat = "") : EtatRobot(robot, "Fige"), _etat_precedent(dernier_etat) {};
+        Fige(std::string dernier_etat = "") : EtatRobot(), _etat_precedent(dernier_etat) {};
         Fige* _instance;
         std::string _etat_precedent;
 

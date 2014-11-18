@@ -7,7 +7,7 @@
 class EnRoute : public EtatRobot
 {
     public:
-        EnRoute(Robot* robot, std::string nom) : EtatRobot(robot, nom) {};
+        EnRoute() : EtatRobot() {};
         virtual EtatRobot* figer();
         virtual EtatRobot* tourner();
 };
