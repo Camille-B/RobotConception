@@ -16,7 +16,7 @@ class AVideFacePlot : public EnRoute
         static AVideFacePlot* instance();
 
     private:
-        AVideFacePlot(Robot* robot) : EnRoute(robot, "AVideFacePlot") {};
+        AVideFacePlot() : EnRoute() {};
         AVideFacePlot* _instance;
 
 };

@@ -16,7 +16,7 @@ class AVide : public EnRoute
         static AVide* instance();
 
     private:
-        AVide(Robot* robot) : EnRoute(robot, "AVide") {};
+        AVide() : EnRoute() {};
         AVide* _instance;
 
 

@@ -17,7 +17,7 @@ class EnCharge : public EnRoute
         static EnCharge* instance();
 
     private:
-        EnCharge(Robot* robot) : EnRoute(robot, "EnCharge") {};
+        EnCharge() : EnRoute() {};
         EnCharge* _instance;
 };
 

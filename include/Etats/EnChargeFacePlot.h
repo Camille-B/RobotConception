@@ -16,7 +16,7 @@ class EnChargeFacePlot : public EnRoute
         static EnChargeFacePlot* instance();
 
     private:
-        EnChargeFacePlot(Robot* robot) : EnRoute(robot, "EnChargeFacePlot") {};
+        EnChargeFacePlot() : EnRoute() {};
         EnChargeFacePlot* _instance;
 };
 

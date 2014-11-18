@@ -11,12 +11,13 @@ class Fige : public EtatRobot
 
         virtual std::string nom_etat() const {return "Fige";}
 
-        static Fige* instance();
+        static Fige* instance(EtatRobot* etat_precedent);
 
     private:
-        Fige(Robot* robot = NULL, std::string dernier_etat = "") : EtatRobot(robot, "Fige"), _etat_precedent(dernier_etat) {};
-        Fige* _instance;
-        std::string _etat_precedent;
+        Fige(EtatRobot* dernier_etat = EtatRobot::instanceInit()) : EtatRobot(), _etat_precedent(dernier_etat) {};
+        EtatRobot* _etat_precedent;
+        static Fige* _instance;
+
 
 };
 

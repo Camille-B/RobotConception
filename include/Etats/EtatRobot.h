@@ -11,10 +11,10 @@ class Robot;
 class EtatRobot
 {
     public:
-        static std::map<std::string, EtatRobot*> _instance;
-        static EtatRobot* instance(std::string etat){return EtatRobot::_instance[etat];}
+        static EtatRobot* _instanceInit;
+        static EtatRobot* instanceInit(){return EtatRobot::_instanceInit;}
 
-        EtatRobot(Robot* robot, std::string etat = "");
+        EtatRobot();
 
         virtual std::string nom_etat() const = 0;
 
@@ -27,10 +27,6 @@ class EtatRobot
         virtual EtatRobot* tourner();
         virtual EtatRobot* peser();
         virtual EtatRobot* evaluerPlot();
-
-    protected:
-        Robot* _robot;
-
 };
 
 class ImpossibleToExecute{};
