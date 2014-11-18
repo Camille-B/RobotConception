@@ -7,10 +7,10 @@
 class AVideFacePlot : public EnRoute
 {
     public:
-        virtual void saisirObjet(Objet o);
-        virtual void tourner();
+        virtual EtatRobot* saisirObjet(Objet o);
+        virtual EtatRobot* tourner();
+        virtual EtatRobot* evaluerPlot();
 
-        virtual int evaluerPlot();
         virtual std::string nom_etat() const {return "AVideFacePlot";}
 
         static AVideFacePlot* instance();

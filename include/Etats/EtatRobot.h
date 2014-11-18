@@ -18,18 +18,15 @@ class EtatRobot
 
         virtual std::string nom_etat() const = 0;
 
-        /* Méthodes du robot */
-        virtual void avancer(int,int);
-        virtual void figer();
-        virtual void poser();
-        virtual void rencontrerPlot(Plot p);
-        virtual void repartir();
-        virtual void saisir(Objet o);
-        virtual void tourner();
-
-        /* Fonctions du robot */
-        virtual int peser();
-        virtual int evaluerPlot();
+        virtual EtatRobot* avancer(int,int);
+        virtual EtatRobot* figer();
+        virtual EtatRobot* poser();
+        virtual EtatRobot* rencontrerPlot(Plot p);
+        virtual EtatRobot* repartir();
+        virtual EtatRobot* saisir(Objet o);
+        virtual EtatRobot* tourner();
+        virtual EtatRobot* peser();
+        virtual EtatRobot* evaluerPlot();
 
     protected:
         Robot* _robot;

@@ -7,9 +7,9 @@
 class AVide : public EnRoute
 {
     public:
-        virtual void avancer(int,int);
-        virtual void rencontrerPlot(Plot p);
-        virtual void tourner();
+        virtual EtatRobot* avancer(int,int);
+        virtual EtatRobot* rencontrerPlot(Plot p);
+        virtual EtatRobot* tourner();
 
         virtual std::string nom_etat() const {return "AVide";}
 

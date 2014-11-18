@@ -7,7 +7,7 @@
 class Fige : public EtatRobot
 {
     public:
-        virtual void repartir();
+        virtual EtatRobot* repartir();
 
         virtual std::string nom_etat() const {return "Fige";}
 
