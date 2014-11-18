@@ -7,10 +7,10 @@
 class EnChargeFacePlot : public EnRoute
 {
     public:
-        virtual void poser();
-        virtual void tourner();
+        virtual EtatRobot* poser();
+        virtual EtatRobot* tourner();
+        virtual EtatRobot* peser();
 
-        virtual int peser();
         virtual std::string nom_etat() const {return "EnChargeFacePlot";}
 
         static EnChargeFacePlot* instance();

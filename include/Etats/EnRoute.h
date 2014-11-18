@@ -8,8 +8,8 @@ class EnRoute : public EtatRobot
 {
     public:
         EnRoute(Robot* robot, std::string nom) : EtatRobot(robot, nom) {};
-        virtual void figer();
-        virtual void tourner();
+        virtual EtatRobot* figer();
+        virtual EtatRobot* tourner();
 };
 
 #endif // ENROUTE_H

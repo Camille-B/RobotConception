@@ -7,11 +7,11 @@
 class EnCharge : public EnRoute
 {
     public:
-        virtual void avancer(int,int);
-        virtual void rencontrerPlot(Plot p);
-        virtual void tourner();
+        virtual EtatRobot* avancer(int,int);
+        virtual EtatRobot* rencontrerPlot(Plot p);
+        virtual EtatRobot* tourner();
+        virtual EtatRobot* peser();
 
-        virtual int peser();
         virtual std::string nom_etat() const {return "EnCharge";}
 
         static EnCharge* instance();
