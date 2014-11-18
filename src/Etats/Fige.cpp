@@ -1,13 +1,16 @@
 #include "../../include/Etats/Fige.h"
 
-static Fige::_instance = null;
+Fige* Fige::_instance = 0;
 
-EtatRobot* repartir(){
-    return _etat_precedent();
+EtatRobot* Fige::repartir(){
+    return etat_precedent();
 }
 
 Fige* Fige::instance(EtatRobot* etat_precedent){
-    if(_instance==null) return Fige(etat_precedent);
+    if(_instance==0){
+        Fige f = Fige(etat_precedent);
+        return &f;
+    }
     else{
         _instance->_etat_precedent = etat_precedent;
         return _instance;

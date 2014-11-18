@@ -8,11 +8,15 @@
 #include "Etats/EtatRobot.h"
 #include "Etats/Fige.h"
 
+using namespace std;
+
+
 class Robot : public RobotAAfficher
 {
     public:
         /* Constructeur */
-        Robot(EtatRobot* e = Fige::instance(), Plot p = Plot(), Objet o = Objet(), int dir = 0, Position pos = Position());
+        Robot(EtatRobot* e = EtatRobot::instanceInit(), Plot p = Plot(), Objet o = Objet(), int dir = 0, Position pos = Position()) :
+            _etat_courant(e), _plot(p), _objet(o), _direction(dir), _position(pos) {};
 
         /* Méthodes du robot */
         void afficher();

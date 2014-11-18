@@ -1,41 +1,41 @@
 #include "../../include/Etats/EtatRobot.h"
-#include <map>
-#include <string>
+#include "../../include/Etats/AVide.h"
+
 
 EtatRobot* EtatRobot::_instanceInit = AVide::instance();
 
-EtatRobot* avancer(int,int){
+EtatRobot* EtatRobot::avancer(){
     throw ImpossibleToExecute();
 }
 
-EtatRobot* figer(){
+EtatRobot* EtatRobot::figer(){
     throw ImpossibleToExecute();
 }
 
-EtatRobot* poser(){
+EtatRobot* EtatRobot::poser(){
     throw ImpossibleToExecute();
 }
 
-EtatRobot* rencontrerPlot(Plot p){
+EtatRobot* EtatRobot::rencontrerPlot(){
     throw ImpossibleToExecute();
 }
 
-EtatRobot* repartir(){
+EtatRobot* EtatRobot::repartir(){
     throw ImpossibleToExecute();
 }
 
-EtatRobot* saisir(Objet o){
+EtatRobot* EtatRobot::saisir(){
     throw ImpossibleToExecute();
 }
 
-EtatRobot* tourner(){
+EtatRobot* EtatRobot::tourner(){
     throw ImpossibleToExecute();
 }
 
-EtatRobot* peser(){
+EtatRobot* EtatRobot::peser(){
     throw ImpossibleToExecute();
 }
 
-EtatRobot* evaluerPlot(){
+EtatRobot* EtatRobot::evaluerPlot(){
     throw ImpossibleToExecute();
 }

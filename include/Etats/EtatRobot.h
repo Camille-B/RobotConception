@@ -1,12 +1,7 @@
 #ifndef ETATROBOT_H
 #define ETATROBOT_H
 
-#include "../Objet.h"
-#include "../Plot.h"
-#include <map>
 #include <string>
-
-class Robot;
 
 class EtatRobot
 {
@@ -14,16 +9,16 @@ class EtatRobot
         static EtatRobot* _instanceInit;
         static EtatRobot* instanceInit(){return EtatRobot::_instanceInit;}
 
-        EtatRobot();
+        EtatRobot() = default;
 
         virtual std::string nom_etat() const = 0;
 
-        virtual EtatRobot* avancer(int,int);
+        virtual EtatRobot* avancer();
         virtual EtatRobot* figer();
         virtual EtatRobot* poser();
-        virtual EtatRobot* rencontrerPlot(Plot p);
+        virtual EtatRobot* rencontrerPlot();
         virtual EtatRobot* repartir();
-        virtual EtatRobot* saisir(Objet o);
+        virtual EtatRobot* saisir();
         virtual EtatRobot* tourner();
         virtual EtatRobot* peser();
         virtual EtatRobot* evaluerPlot();
