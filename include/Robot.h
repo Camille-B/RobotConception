@@ -10,18 +10,27 @@
 
 using namespace std;
 
+enum Direction{
+
+    NORTH,
+    EAST,
+    SOUTH,
+    WEST
+
+};
+
 
 class Robot : public RobotAAfficher
 {
     public:
-        /* Constructeur */
-        Robot(EtatRobot* e = EtatRobot::instanceInit(), Plot p = Plot(), Objet o = Objet(), int dir = 0, Position pos = Position()) : RobotAAfficher(),
+        /* Constructeur et destructeur */
+        Robot(EtatRobot* e = EtatRobot::instanceInit(), Plot p = Plot(), Objet o = Objet(), Direction dir = NORTH, Position pos = Position()) : RobotAAfficher(),
             _etat_courant(e), _plot(p), _objet(o), _direction(dir), _position(pos) {};
         virtual ~Robot() = default;
 
         /* Méthodes du robot */
         void afficher();
-        void avancer();
+        void avancer(int,int);
         void figer();
         void poser();
         void rencontrerPlot(Plot p);
@@ -29,7 +38,6 @@ class Robot : public RobotAAfficher
         void saisir(Objet o);
         void tourner();
 
-        /* Fonctions du robot */
         int peser();
         int evaluerPlot();
 
@@ -37,22 +45,22 @@ class Robot : public RobotAAfficher
         EtatRobot* etat_courant() const {return _etat_courant;}
         Plot plot() const {return _plot;}
         Objet objet() const {return _objet;}
-        int direction() const {return _direction;}
+        Direction direction() const {return _direction;}
         Position position() const {return _position;}
 
         /* Setters */
-        void etat_courant(EtatRobot* e);
-        void plot(Plot p);
-        void objet(Objet o);
-        void direction(int d);
-        void position(Position p);
+        void etat_courant(EtatRobot* e){_etat_courant = e;}
+        void plot(Plot p){_plot = p;}
+        void objet(Objet o){_objet = o;}
+        void direction(Direction d){_direction = d;}
+        void position(Position p){_position = p;}
 
 
     private:
         EtatRobot* _etat_courant;
         Plot _plot;
         Objet _objet;
-        int _direction;
+        Direction _direction;
         Position _position;
 };
 
