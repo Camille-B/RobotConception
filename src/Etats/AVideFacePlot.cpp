@@ -1,5 +1,5 @@
 #include "../../include/Etats/AVideFacePlot.h"
-#include "../../include/Etats/EnChargeFacePlot.h"
+#include "../../include/Etats/EnCharge.h"
 
 
 AVideFacePlot* AVideFacePlot::_instance = NULL;
@@ -9,8 +9,8 @@ AVideFacePlot* AVideFacePlot::instance(){
     return AVideFacePlot::_instance;
 }
 
-EtatRobot* AVideFacePlot::saisirObjet(){
-    return EnChargeFacePlot::instance();
+EtatRobot* AVideFacePlot::saisir(){
+    return EnCharge::instance();
 }
 
 EtatRobot* AVideFacePlot::tourner(){

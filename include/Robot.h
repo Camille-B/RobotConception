@@ -24,12 +24,11 @@ class Robot : public RobotAAfficher
 {
     public:
         /* Constructeur et destructeur */
-        Robot(EtatRobot* e = EtatRobot::instanceInit(), Plot p = Plot(), Objet o = Objet(), Direction dir = NORTH, Position pos = Position()) : RobotAAfficher(),
-            _etat_courant(e), _plot(p), _objet(o), _direction(dir), _position(pos) {};
+        Robot(EtatRobot* e = EtatRobot::instanceInit(), Direction dir = NORTH, Position pos = Position()) : RobotAAfficher(),
+            _etat_courant(e), _plot(0), _objet(0), _direction(dir), _position(pos) {};
         virtual ~Robot() = default;
 
         /* Méthodes du robot */
-        void afficher();
         void avancer(int,int);
         void figer();
         void poser();

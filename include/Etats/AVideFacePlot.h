@@ -7,7 +7,7 @@
 class AVideFacePlot : public EnRoute
 {
     public:
-        virtual EtatRobot* saisirObjet();
+        virtual EtatRobot* saisir();
         virtual EtatRobot* tourner();
         virtual EtatRobot* evaluerPlot();
 

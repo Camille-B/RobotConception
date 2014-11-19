@@ -2,7 +2,7 @@
 #include "../../include/Etats/Fige.h"
 
 EtatRobot* EnRoute::figer(){
-    return this;
+    return Fige::instance(this);
 }
 
 EtatRobot* EnRoute::tourner(){
