@@ -18,7 +18,7 @@ class EnCharge : public EnRoute
 
     private:
         EnCharge() : EnRoute() {};
-        EnCharge* _instance;
+        static EnCharge* _instance;
 };
 
 #endif // ENCHARGE_H

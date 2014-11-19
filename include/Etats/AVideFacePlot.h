@@ -17,7 +17,7 @@ class AVideFacePlot : public EnRoute
 
     private:
         AVideFacePlot() : EnRoute() {};
-        AVideFacePlot* _instance;
+        static AVideFacePlot* _instance;
 
 };
 

@@ -17,7 +17,7 @@ class EnChargeFacePlot : public EnRoute
 
     private:
         EnChargeFacePlot() : EnRoute() {};
-        EnChargeFacePlot* _instance;
+        static EnChargeFacePlot* _instance;
 };
 
 #endif // ENCHARGEFACEPLOT_H

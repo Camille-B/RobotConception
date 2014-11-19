@@ -1,6 +1,8 @@
 #ifndef PLOT_H
 #define PLOT_H
 
+#include <iostream>
+
 
 class Plot
 {
@@ -9,6 +11,8 @@ class Plot
 
         int hauteur(){return _hauteur;}
         void hauteur(int h){_hauteur = h;}
+
+        friend std::ostream& operator<<(std::ostream&,Plot&);
 
     private:
         int _hauteur;

@@ -12,12 +12,13 @@ class AVide : public EnRoute
         virtual EtatRobot* tourner();
 
         virtual std::string nom_etat() const {return "AVide";}
-
         static AVide* instance();
+
 
     private:
         AVide() : EnRoute() {};
-        AVide* _instance;
+        static AVide* _instance;
+
 
 
 };
