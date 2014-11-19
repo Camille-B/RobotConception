@@ -3,6 +3,6 @@
 
 using namespace std;
 
-ostream& operator<<(ostream& os,Plot& p){
-    return os << "[::PLOT::]" << p.hauteur() << endl;
+ostream& operator<<(ostream& os, const Plot& p){
+    return os << "[::PLOT::]" << p._hauteur << endl;
 }

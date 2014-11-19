@@ -14,7 +14,7 @@ class Position
         void x(int newX){_x = newX;};
         void y(int newY){_y = newY;};
 
-        friend std::ostream& operator<<(std::ostream&, Position&);
+        friend std::ostream& operator<<(std::ostream&, const Position&);
 
     private:
         int _x;

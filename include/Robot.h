@@ -15,8 +15,9 @@ class Robot : public RobotAAfficher
 {
     public:
         /* Constructeur */
-        Robot(EtatRobot* e = EtatRobot::instanceInit(), Plot p = Plot(), Objet o = Objet(), int dir = 0, Position pos = Position()) :
+        Robot(EtatRobot* e = EtatRobot::instanceInit(), Plot p = Plot(), Objet o = Objet(), int dir = 0, Position pos = Position()) : RobotAAfficher(),
             _etat_courant(e), _plot(p), _objet(o), _direction(dir), _position(pos) {};
+        virtual ~Robot() = default;
 
         /* Méthodes du robot */
         void afficher();

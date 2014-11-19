@@ -2,6 +2,6 @@
 
 using namespace std;
 
-ostream& operator<<(ostream& os, Position& p){
-    os << "[::POSITION::] (X = " << p.x() << ", Y = " << p.y() << ")" << endl;
+std::ostream& operator<<(std::ostream& os, const Position& p){
+    return os << "[::POSITION::] (X = " << p._x << ", Y = " << p._y << ")" << endl;
 }

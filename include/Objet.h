@@ -12,7 +12,7 @@ class Objet
         int poids(){return _poids;}
         void poids(int p){_poids = p;}
 
-        friend std::ostream& operator<<(std::ostream&, Objet&);
+        friend std::ostream& operator<<(std::ostream&, const Objet&);
 
     private:
         int _poids;

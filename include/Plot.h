@@ -12,7 +12,7 @@ class Plot
         int hauteur(){return _hauteur;}
         void hauteur(int h){_hauteur = h;}
 
-        friend std::ostream& operator<<(std::ostream&,Plot&);
+        friend std::ostream& operator<<(std::ostream&, const Plot&);
 
     private:
         int _hauteur;

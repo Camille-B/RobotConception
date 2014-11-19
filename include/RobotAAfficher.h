@@ -9,12 +9,14 @@
 class RobotAAfficher
 {
     public:
-        void attacherAfficheur(Afficheur* a);
-        void detacherAfficheur(Afficheur* a);
-        void notifier() const;
-        void trace(std::string message) const;
+        RobotAAfficher() = default;
 
-        virtual ~RobotAAfficher();
+        void attacherAfficheur(Afficheur*);
+        void detacherAfficheur(Afficheur*);
+        void notifier();
+        void trace(std::string);
+
+        virtual ~RobotAAfficher() = default;
 
     private:
         std::vector<Afficheur*> _afficheurs;

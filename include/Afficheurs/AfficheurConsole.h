@@ -7,7 +7,7 @@
 class AfficheurConsole : public Afficheur
 {
     public:
-        AfficheurConsole(Robot* robot = 0) : Afficheur(robot) {};
+        AfficheurConsole(Robot* robot = NULL) : Afficheur(robot) {};
         virtual void afficher();
         virtual void trace(std::string message);
 
