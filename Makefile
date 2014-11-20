@@ -13,10 +13,13 @@ all : $(EXEC_NAME)
 
 clean :
 	rm $(EXEC_NAME) $(OBJ_FILES)
+	rm doc.html	
 	rm -R $(DOCDIR)/html/
+	
 
 doc: .FORCE
 	$(DOXY) $(DOXYFILE)
+	ln -s doc/html/index.html doc.html
 
 .FORCE:
 
