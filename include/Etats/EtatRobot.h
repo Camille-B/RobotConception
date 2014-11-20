@@ -1,3 +1,11 @@
+/*!
+ * \file EtatRobot.h
+ * \brief Modélisation des états du robot.
+ * \author Camille BOINAUD, Fabien PINEL
+ * \version 1.0
+ * \date 20 Novembre 2014
+ */
+
 #ifndef ETATROBOT_H
 #define ETATROBOT_H
 

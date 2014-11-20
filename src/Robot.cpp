@@ -1,3 +1,11 @@
+/*!
+ * \file Robot.cpp
+ * \brief Implémentation de la classe Robot.h
+ * \author Camille BOINAUD, Fabien PINEL
+ * \version 1.0
+ * \date 20 Novembre 2014
+ */
+
 #include "../include/Robot.h"
 #include <iostream>
 

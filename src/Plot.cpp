@@ -1,4 +1,4 @@
-#include "Plot.h"
+#include "../include/Plot.h"
 #include <iostream>
 
 using namespace std;

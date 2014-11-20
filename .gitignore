@@ -26,6 +26,7 @@
 *.exe
 *.out
 *.app
+testRobot
 
 # IDE
 *.cbp
@@ -33,3 +34,6 @@
 /bin/*
 *.layout
 *.depend
+
+#doc
+/doc/html/*
