@@ -1,6 +1,6 @@
 /*!
- * \file Position.h
- * \brief Modélisation de la position du robot.
+ * \file Objet.h
+ * \brief Modélisation de Objet.
  * \author Camille BOINAUD, Fabien PINEL
  * \version 1.0
  * \date 20 Novembre 2014

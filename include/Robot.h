@@ -83,7 +83,7 @@ class Robot : public RobotAAfficher
         /*!
          * \brief Poser un objet.
          *
-         * Vérifie que le robot est dans un état qui l'autorise à sdéposer l'objet qu'il transporte, puis change le dépose sur le plot.
+         * Vérifie que le robot est dans un état qui l'autorise à déposer l'objet qu'il transporte, puis change le dépose sur le plot.
          *
          * \return void
          */

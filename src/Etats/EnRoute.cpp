@@ -4,7 +4,3 @@
 EtatRobot* EnRoute::figer(){
     return Fige::instance(this);
 }
-
-EtatRobot* EnRoute::tourner(){
-    return this;
-}

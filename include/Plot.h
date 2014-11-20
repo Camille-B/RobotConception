@@ -1,5 +1,5 @@
 /*!
- * \file Position.h
+ * \file Plot.h
  * \brief Modélisation d'un plot.
  * \author Camille BOINAUD, Fabien PINEL
  * \version 1.0

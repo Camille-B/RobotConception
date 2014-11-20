@@ -1,5 +1,5 @@
 /*!
- * \file Robot.h
+ * \file RobotAAfficher.h
  * \brief Modélisation du robot et de la gestion de son affichage.
  * \author Camille BOINAUD, Fabien PINEL
  * \version 1.0
