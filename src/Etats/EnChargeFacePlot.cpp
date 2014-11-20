@@ -1,5 +1,7 @@
 #include "../../include/Etats/EnChargeFacePlot.h"
-#include "../../include/Etats/AVide.h"
+#include "../../include/Etats/AVideFacePlot.h"
+#include "../../include/Etats/EnCharge.h"
+
 
 
 EnChargeFacePlot* EnChargeFacePlot::_instance = NULL;
@@ -10,11 +12,11 @@ EnChargeFacePlot* EnChargeFacePlot::instance(){
 }
 
 EtatRobot* EnChargeFacePlot::poser(){
-    return AVide::instance();
+    return AVideFacePlot::instance();
 }
 
 EtatRobot* EnChargeFacePlot::tourner(){
-    return EnChargeFacePlot::instance();
+    return EnCharge::instance();
 }
 
 EtatRobot* EnChargeFacePlot::peser(){
