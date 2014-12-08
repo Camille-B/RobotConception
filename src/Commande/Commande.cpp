@@ -10,11 +10,11 @@ Commande::Commande(string s){
 }
 
 
-Commande* Commande::nouvelleCommande(string s){
+Commande* Commande::nouvelleCommande(string s, Robot* r, const Invocateur* f){
     Commande* cmd = Commande::_commandesInscrites[s];
     if(cmd==NULL)
         throw NotFoundException();
-    else return cmd->constructeurVirtuel();
+    else return cmd->constructeurVirtuel(r,f);
 }
 
 void Commande::desexecute(){

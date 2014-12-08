@@ -13,7 +13,13 @@
 #include <map>
 #include <stack>
 
+#include "../Robot.h"
+#include "Invocateur.h"
+
+
 using namespace std;
+
+class Invocateur;
 
 /*!
  * \class Commande
@@ -49,14 +55,14 @@ class Commande
         * \param string : clé correspondant à l'objet que l'on souhaite instancier.
         * \return Commande*
         */
-        static Commande* nouvelleCommande(string);
+        static Commande* nouvelleCommande(string, Robot* r, const Invocateur* f);
 
 
         /*!
         * \brief Méthode abstraite qui retourne un pointeur sur une nouvelle Commande instanciée.
         * \return Commande*
         */
-        virtual Commande* constructeurVirtuel() = 0;
+        virtual Commande* constructeurVirtuel(Robot *, const Invocateur*) = 0;
 
          /*!
         * \brief Méthode abstraite qui réalise l'execution d'une Commande.
