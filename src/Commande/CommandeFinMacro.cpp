@@ -1,11 +1,1 @@
-#include "CommandeFinMacro.h"
-
-CommandeFinMacro::CommandeFinMacro()
-{
-    //ctor
-}
-
-CommandeFinMacro::~CommandeFinMacro()
-{
-    //dtor
-}
+#include "../../include/Commande/CommandeFinMacro.h"

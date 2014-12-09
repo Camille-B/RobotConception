@@ -1,9 +1,9 @@
 CC = g++
 CFLAGS = -g -fexceptions -Wall -std=c++11
 EXEC_NAME = testRobot
-INCLUDES = $(wildcard include/*.h) $(wildcard include/*/*.h) 
-LIBS = $(wildcard src/*.cpp) $(wildcard src/*/*.cpp)
-OBJ_FILES = $(wildcard src/*.o) $(wildcard src/*/*.o)
+INCLUDES = $(wildcard include/*.h) $(wildcard include/*/*.h) $(wildcard include/*/*/*.h)
+LIBS = $(wildcard src/*.cpp) $(wildcard src/*/*.cpp) $(wildcard src/*/*/*.cpp)
+OBJ_FILES = $(wildcard src/*.o) $(wildcard src/*/*.o)  $(wildcard src/*/*/*.o)
 DOXY       = doxygen
 DOCDIR	   = doc/
 DOXYFILE   = $(DOCDIR)Doxyfile

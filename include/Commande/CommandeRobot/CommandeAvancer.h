@@ -12,7 +12,7 @@
 #include <vector>
 
 #include "CommandeRobot.h"
-#include "Position.h"
+#include "../../Position.h"
 
 /*!
  * \class CommandeAvancer
