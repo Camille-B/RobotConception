@@ -37,3 +37,6 @@ testRobot
 
 #doc
 /doc/html/*
+
+#VPP
+*.vpp*
