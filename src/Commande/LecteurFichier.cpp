@@ -17,11 +17,18 @@ void LecteurFichier::lecture(Robot* r){
 
     Commande* commande;
     while(true){
-        if((commande = Commande::nouvelleCommande(read_string(),r,reinterpret_cast<Invocateur*>(this)))=0) break;
+        if((commande = lecture_commande(r))=0) break;
         Commande::_historiqueCommandes.push(commande);
         commande->execute();
     }
 }
+
+Commande* LecteurFichier::lecture_commande(Robot* r){
+    string s;
+    *_stream >> s;
+    return Commande::nouvelleCommande(s,r,reinterpret_cast<Invocateur*>(this));
+}
+
 
 int LecteurFichier::read_int() const{
     int i;

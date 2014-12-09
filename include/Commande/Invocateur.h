@@ -3,11 +3,13 @@
 
 #include "Commande.h"
 
+class Commande;
+
 class Invocateur
 {
     public:
         virtual void lecture(Robot*) = 0;
-
+        virtual Commande* lecture_commande(Robot*) = 0;
         virtual int read_int() const = 0;
         virtual string read_string() const = 0;
 
