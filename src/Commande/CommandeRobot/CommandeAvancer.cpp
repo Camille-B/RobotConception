@@ -8,6 +8,7 @@ CommandeAvancer::CommandeAvancer(Robot* r, const Invocateur* f) : CommandeRobot(
 }
 
 void CommandeAvancer::execute(){
+    Commande::_historiqueCommandes.push(this);
     CommandeAvancer::_etat_pos.push_back(CommandeAvancer::_pos);
     CommandeRobot::_robot->avancer(CommandeAvancer::_pos->x(),CommandeAvancer::_pos->y());
 };
