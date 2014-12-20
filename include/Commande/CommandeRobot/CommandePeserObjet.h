@@ -1,13 +1,49 @@
+/*!
+ * \file CommandePeserObjet.h
+ * \brief Modélisation de la commande PeserObjet du robot.
+ * \author Camille BOINAUD, Fabien PINEL
+ * \version 2.0
+ * \date 20 Décembre 2014
+ */
+
 #ifndef COMMANDEPESEROBJET_H
 #define COMMANDEPESEROBJET_H
 
+#include "CommandeRobot.h"
 
-class CommandePeserObjet
+/*!
+ * \class CommandePeserObjet
+ * \brief Classe de la Commande PeserObjet du Robot.
+ *
+ * Classe modélisant la Commande PeserObjet, que l'on peut utiliser sur le Robot.
+ */
+class CommandePeserObjet : public CommandeRobot
 {
-    public:
-        CommandePeserObjet();
-    protected:
-    private:
+     public:
+
+        /*!
+         * \brief Constructeur de CommandePeserObjet
+         */
+        CommandePeserObjet(Robot* r, const Invocateur* f) : CommandeRobot(_nom_commande, r) {}
+
+       /*!
+        * \brief Méthode qui réalise l'execution de CommandePeserObjet sur le Robot.
+        * \return void
+        */
+        virtual void execute(){
+            CommandeRobot::_robot->peser();
+        }
+
+       /*!
+        * \brief Méthode qui retourne un pointeur sur une nouvelle instance de CommandePeserObjet.
+        * \return Commande*
+        */
+        virtual Commande* constructeurVirtuel(Robot* r, const Invocateur* f){return new CommandePeserObjet(r,f);}
+
+        /*!
+         * \brief _nom_commande : clé désignant l'objet CommandePeserObjet.
+         */
+        string _nom_commande = "PESEROBJET";
 };
 
 #endif // COMMANDEPESEROBJET_H
