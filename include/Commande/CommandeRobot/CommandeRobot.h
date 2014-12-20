@@ -49,7 +49,7 @@ class CommandeRobot : public Commande
         * \brief Méthode qui désexecute une Commande.
         * \return void
         */
-        virtual void desexecute(){throw UnnableToReverseException();}
+        virtual void desexecute(){throw UnableToReverseException();}
 };
 
 #endif // COMMANDEROBOT_H

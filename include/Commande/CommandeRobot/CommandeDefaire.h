@@ -9,7 +9,6 @@
 #ifndef COMMANDEDEFAIRE_H
 #define COMMANDEDEFAIRE_H
 
-#include <vector>
 #include "CommandeRobot.h"
 
 /*!
@@ -34,7 +33,7 @@ class CommandeDefaire : public CommandeRobot
         virtual void execute(){
             try{
                 Commande::_historiqueCommandes.top()->desexecute();
-            } catch(UnnableToReverseException e){
+            } catch(UnableToReverseException e){
                 cerr<< "Cette commande ne peut pas être annulée" << endl;
             }
             Commande::_historiqueCommandes.pop();

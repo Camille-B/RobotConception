@@ -18,7 +18,7 @@ Commande* Commande::nouvelleCommande(string s, Robot* r, const Invocateur* f){
 }
 
 void Commande::desexecute(){
-    throw UnnableToReverseException();
+    throw UnableToReverseException();
 }
 
 

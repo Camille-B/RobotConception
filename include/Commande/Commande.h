@@ -86,11 +86,11 @@ class Commande
 class NotFoundException{};
 
 /*!
- * \class UnnableToReverseException
- * \brief Classe exception UnnableToReverseException.
+ * \class UnableToReverseException
+ * \brief Classe exception UnableToReverseException.
  *
- * Classe d'exception indiquant une erreur UnnableToReverseException.
+ * Classe d'exception indiquant une erreur UnableToReverseException.
  */
-class UnnableToReverseException{};
+class UnableToReverseException{};
 
 #endif // COMMANDE_H
