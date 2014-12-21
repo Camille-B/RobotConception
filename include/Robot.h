@@ -122,11 +122,10 @@ class Robot : public RobotAAfficher
          * \brief Changement de direction du robot.
          *
          * Vérifie que le robot est dans un état qui l'autorise à tourner, puis modifie la direction associée au robot.
-         * Cette direction est définie d'après la direction avant l'appel de la méthode : Nord->Est, Est->Sud, Sud->Ouest, Ouest->Nord.
          *
          * \return void
          */
-        void tourner();
+        void tourner(Direction);
 
         /*!
          * \brief Pèse un objet.

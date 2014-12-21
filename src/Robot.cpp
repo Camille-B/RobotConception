@@ -78,16 +78,11 @@ void Robot::saisir(Objet o){
 	}
 }
 
-void Robot::tourner(){
+void Robot::tourner(Direction dir){
 	try{
         trace("##### Robot::tourner() #####");
 		etat_courant(etat_courant()->tourner());
-		switch(direction()) {
-            case NORTH : direction(EAST); break;
-            case EAST : direction(SOUTH); break;
-            case SOUTH : direction(WEST); break;
-            case WEST : direction(NORTH); break;
-		}
+		direction(dir);
 		notifier();
 	}catch(ImpossibleToExecute e){
 		trace("Impossible to execute tourner");

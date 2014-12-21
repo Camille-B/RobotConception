@@ -46,13 +46,13 @@ int main()
     robot.notifier();
 
     robot.avancer(6,5);
-    robot.tourner();
+    robot.tourner(NORTH);
     robot.rencontrerPlot(plot);
     cout << "Evaluation de la hauteur du plot : " << robot.evaluerPlot() << " ;\n" << endl;
     robot.saisir(objet);
     robot.figer();
     robot.repartir();
-    robot.tourner();
+    robot.tourner(SOUTH);
     robot.avancer(10,10);
     cout << "Pesée de l'objet : " << robot.peser() << " ;\n" << endl;
     robot.rencontrerPlot(plot);

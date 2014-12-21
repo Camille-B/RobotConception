@@ -9,8 +9,6 @@
 #ifndef COMMANDEAVANCER_H
 #define COMMANDEAVANCER_H
 
-#include <vector>
-
 #include "CommandeRobot.h"
 #include "../../Position.h"
 
@@ -52,12 +50,12 @@ class CommandeAvancer : public CommandeRobot
         /*!
          * \brief _etat_pos : pointeur sur les positions précédentes du robot.
          */
-        vector<Position*> _etat_pos;
+        Position* _etat_pos;
 
         /*!
          * \brief _pos : la positions actuelle du robot.
          */
-        static Position* _pos;
+        Position* _pos;
 
         /*!
          * \brief _nom_commande : clé désignant l'objet CommandeAvancer.
