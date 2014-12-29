@@ -22,9 +22,15 @@ class CommandeDefaire : public CommandeRobot
    public:
 
         /*!
+         * \brief Constructeur par défaut de CommandeDefaire
+         */
+        CommandeDefaire() : CommandeRobot("DEFAIRE") {}
+
+
+        /*!
          * \brief Constructeur de CommandeDefaire
          */
-        CommandeDefaire(Robot* r, const Invocateur* f) : CommandeRobot(_nom_commande, r) {}
+        CommandeDefaire(Robot* r, const Invocateur* f) : CommandeRobot("DEFAIRE", r) {}
 
        /*!
         * \brief Méthode qui réalise l'execution de CommandeDefaire sur le Robot.
@@ -33,6 +39,7 @@ class CommandeDefaire : public CommandeRobot
         virtual void execute(){
             try{
                 Commande::_historiqueCommandes.top()->desexecute();
+                Commande::_historiqueCommandes.pop();
             } catch(UnableToReverseException e){
                 cerr<< "Cette commande ne peut pas être annulée" << endl;
             }
@@ -45,13 +52,6 @@ class CommandeDefaire : public CommandeRobot
         * \return Commande*
         */
         virtual Commande* constructeurVirtuel(Robot* r, const Invocateur* f){return new CommandeDefaire(r,f);}
-
-    private:
-
-        /*!
-         * \brief _nom_commande : clé désignant l'objet CommandeAvancer.
-         */
-        string _nom_commande = "DEFAIRE";
 };
 
 #endif // COMMANDEDEFAIRE_H

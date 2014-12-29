@@ -23,9 +23,15 @@ class CommandePoser : public CommandeRobot
     public:
 
         /*!
+         * \brief Constructeur par défaut de CommandePoser
+         */
+        CommandePoser() : CommandeRobot("POSER") {}
+
+
+        /*!
          * \brief Constructeur de CommandePoser
          */
-        CommandePoser(Robot* r, const Invocateur* f) : CommandeRobot(_nom_commande,r) {}
+        CommandePoser(Robot* r, const Invocateur* f) : CommandeRobot("POSER",r) {}
 
 
        /*!
@@ -53,10 +59,6 @@ class CommandePoser : public CommandeRobot
          */
         Objet* _etat_obj;
 
-        /*!
-         * \brief _nom_commande : clé désignant l'objet CommandePoser.
-         */
-        string _nom_commande = "POSER";
 };
 
 #endif // COMMANDEPOSER_H

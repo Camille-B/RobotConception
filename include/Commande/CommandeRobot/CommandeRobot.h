@@ -10,6 +10,7 @@
 #define COMMANDEROBOT_H
 
 #include "../Commande.h"
+#include "../../Robot.h"
 
 /*!
  * \class CommandeRobot
@@ -21,10 +22,30 @@ class CommandeRobot : public Commande
 {
     public:
 
+
         /*!
          * \brief Constructeur de CommandeRobot.
          */
-        CommandeRobot(string s, Robot* r) : Commande(s), _robot(r) {};
+        CommandeRobot(string s, Robot* r = 0) : Commande(s), _robot(r) {}
+
+
+       /*!
+        * \brief Méthode abstraite qui retourne un pointeur sur une nouvelle Commande instanciée.
+        * \return Commande*
+        */
+        virtual Commande* constructeurVirtuel(Robot*,const Invocateur*) = 0;
+
+       /*!
+        * \brief Méthode abstraite qui réalise l'execution d'une Commande.
+        * \return void
+        */
+        virtual void execute() = 0;
+
+       /*!
+        * \brief Méthode qui désexecute une Commande.
+        * \return void
+        */
+        virtual void desexecute(){throw UnableToReverseException();}
 
     protected:
 
@@ -32,24 +53,6 @@ class CommandeRobot : public Commande
          * \brief Robot commandé.
          */
         Robot* _robot;
-
-        /*!
-        * \brief Méthode abstraite qui retourne un pointeur sur une nouvelle Commande instanciée.
-        * \return Commande*
-        */
-        virtual Commande* constructeurVirtuel(Robot*,const Invocateur*) = 0;
-
-         /*!
-        * \brief Méthode abstraite qui réalise l'execution d'une Commande.
-        * \return void
-        */
-        virtual void execute() = 0;
-
-         /*!
-        * \brief Méthode qui désexecute une Commande.
-        * \return void
-        */
-        virtual void desexecute(){throw UnableToReverseException();}
 };
 
 #endif // COMMANDEROBOT_H

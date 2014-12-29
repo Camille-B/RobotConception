@@ -22,6 +22,12 @@ class CommandeRepartir : public CommandeRobot
     public:
 
         /*!
+         * \brief Constructeur par défaut de CommandeRepartir
+         */
+        CommandeRepartir();
+
+
+        /*!
          * \brief Constructeur de CommandeRepartir
          */
         CommandeRepartir(Robot* r, const Invocateur* f);
@@ -47,12 +53,6 @@ class CommandeRepartir : public CommandeRobot
         */
         virtual Commande* constructeurVirtuel(Robot* r, const Invocateur* f){return new CommandeRepartir(r,f);}
 
-    private:
-
-        /*!
-         * \brief _nom_commande : clé désignant l'objet CommandeRepartir.
-         */
-        string _nom_commande = "REPARTIR";
 };
 
 #endif // COMMANDEREPARTIR_H

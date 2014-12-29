@@ -44,6 +44,12 @@ class Commande
 
 
         /*!
+         * \brief Constructeur  par défaut de Commande.
+         */
+        Commande(){};
+
+
+        /*!
          * \brief Constructeur de Commande.
          */
         Commande(string);

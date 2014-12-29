@@ -1,9 +1,12 @@
 #include "../../../include/Commande/CommandeRobot/CommandeTourner.h"
 
-CommandeTourner::CommandeTourner(Robot* r, const Invocateur* f) : CommandeRobot(_nom_commande,r){
-    if(f->read_string()=="N") _direction = Direction::NORTH;
-    else if(f->read_string()=="E") _direction = Direction::EAST;
-    else if(f->read_string()=="S") _direction = Direction::SOUTH;
+CommandeTourner::CommandeTourner() : CommandeRobot("TOURNER"){}
+
+CommandeTourner::CommandeTourner(Robot* r, const Invocateur* f) : CommandeRobot("TOURNER",r){
+    string _read = f->read_string();
+    if(_read=="N") _direction = Direction::NORTH;
+    else if(_read=="E") _direction = Direction::EAST;
+    else if(_read=="S") _direction = Direction::SOUTH;
     else _direction = Direction::WEST;
 }
 

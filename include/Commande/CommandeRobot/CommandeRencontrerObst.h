@@ -22,6 +22,12 @@ class CommandeRencontrerObst : public CommandeRobot
     public:
 
         /*!
+         * \brief Constructeur par défaut de CommandeRencontrerObst
+         */
+        CommandeRencontrerObst();
+
+
+        /*!
          * \brief Constructeur de CommandeRencontrerObst
          */
         CommandeRencontrerObst(Robot* r, const Invocateur* f);
@@ -47,10 +53,6 @@ class CommandeRencontrerObst : public CommandeRobot
          */
         int _plot;
 
-        /*!
-         * \brief _nom_commande : clé désignant l'objet CommandeRencontrerObst.
-         */
-        string _nom_commande = "RENCONTREROBSTACLE";
 };
 
 #endif // COMMANDERENCONTREROBST_H

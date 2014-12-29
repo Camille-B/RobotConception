@@ -125,7 +125,7 @@
 	"Afficheur.h"
 	<string>
 
-1416504243 /home/camille/Documents/COURS/SI4/UML/Robot/RobotConception/include/Robot.h
+1419179232 /home/camille/Documents/COURS/SI4/UML/Robot/RobotConception/include/Robot.h
 	"RobotAAfficher.h"
 	"Position.h"
 	"Objet.h"
@@ -153,10 +153,10 @@
 1416504972 /home/camille/Documents/COURS/SI4/UML/Robot/RobotConception/include/Etats/Fige.h
 	"EtatRobot.h"
 
-1419099418 source:/home/camille/Documents/COURS/SI4/UML/Robot/RobotConception/src/Commande/Commande.cpp
+1419189021 source:/home/camille/Documents/COURS/SI4/UML/Robot/RobotConception/src/Commande/Commande.cpp
 	"../../include/Commande/Commande.h"
 
-1419099410 /home/camille/Documents/COURS/SI4/UML/Robot/RobotConception/include/Commande/Commande.h
+1419197155 /home/camille/Documents/COURS/SI4/UML/Robot/RobotConception/include/Commande/Commande.h
 	<string>
 	<map>
 	<stack>
@@ -184,61 +184,69 @@
 1418065086 source:/home/camille/Documents/COURS/SI4/UML/Robot/RobotConception/src/Commande/CommandeRobot/CommandeDefaire.cpp
 	"../../../include/Commande/CommandeRobot/CommandeDefaire.h"
 
-1419099531 /home/camille/Documents/COURS/SI4/UML/Robot/RobotConception/include/Commande/CommandeRobot/CommandeDefaire.h
+1419196875 /home/camille/Documents/COURS/SI4/UML/Robot/RobotConception/include/Commande/CommandeRobot/CommandeDefaire.h
 	"CommandeRobot.h"
 
 1418065092 source:/home/camille/Documents/COURS/SI4/UML/Robot/RobotConception/src/Commande/CommandeRobot/CommandeEvaluerObst.cpp
 	"../../../include/Commande/CommandeRobot/CommandeEvaluerObst.h"
 
-1419099987 /home/camille/Documents/COURS/SI4/UML/Robot/RobotConception/include/Commande/CommandeRobot/CommandeEvaluerObst.h
+1419189408 /home/camille/Documents/COURS/SI4/UML/Robot/RobotConception/include/Commande/CommandeRobot/CommandeEvaluerObst.h
 	"CommandeRobot.h"
 
-1418065099 source:/home/camille/Documents/COURS/SI4/UML/Robot/RobotConception/src/Commande/CommandeRobot/CommandeFiger.cpp
+1419196812 source:/home/camille/Documents/COURS/SI4/UML/Robot/RobotConception/src/Commande/CommandeRobot/CommandeFiger.cpp
 	"../../../include/Commande/CommandeRobot/CommandeFiger.h"
 
-1419100231 /home/camille/Documents/COURS/SI4/UML/Robot/RobotConception/include/Commande/CommandeRobot/CommandeFiger.h
+1419189686 /home/camille/Documents/COURS/SI4/UML/Robot/RobotConception/include/Commande/CommandeRobot/CommandeFiger.h
 	"CommandeRobot.h"
 
 1418065105 source:/home/camille/Documents/COURS/SI4/UML/Robot/RobotConception/src/Commande/CommandeRobot/CommandePeserObjet.cpp
 	"../../../include/Commande/CommandeRobot/CommandePeserObjet.h"
 
-1418064618 /home/camille/Documents/COURS/SI4/UML/Robot/RobotConception/include/Commande/CommandeRobot/CommandePeserObjet.h
+1419189508 /home/camille/Documents/COURS/SI4/UML/Robot/RobotConception/include/Commande/CommandeRobot/CommandePeserObjet.h
+	"CommandeRobot.h"
 
-1418065110 source:/home/camille/Documents/COURS/SI4/UML/Robot/RobotConception/src/Commande/CommandeRobot/CommandePoser.cpp
+1419176471 source:/home/camille/Documents/COURS/SI4/UML/Robot/RobotConception/src/Commande/CommandeRobot/CommandePoser.cpp
 	"../../../include/Commande/CommandeRobot/CommandePoser.h"
 
-1418064659 /home/camille/Documents/COURS/SI4/UML/Robot/RobotConception/include/Commande/CommandeRobot/CommandePoser.h
+1419189455 /home/camille/Documents/COURS/SI4/UML/Robot/RobotConception/include/Commande/CommandeRobot/CommandePoser.h
+	"CommandeRobot.h"
+	"../../Objet.h"
 
-1418065116 source:/home/camille/Documents/COURS/SI4/UML/Robot/RobotConception/src/Commande/CommandeRobot/CommandeRencontrerObst.cpp
+1419190249 source:/home/camille/Documents/COURS/SI4/UML/Robot/RobotConception/src/Commande/CommandeRobot/CommandeRencontrerObst.cpp
 	"../../../include/Commande/CommandeRobot/CommandeRencontrerObst.h"
 
-1418064125 /home/camille/Documents/COURS/SI4/UML/Robot/RobotConception/include/Commande/CommandeRobot/CommandeRencontrerObst.h
+1419189674 /home/camille/Documents/COURS/SI4/UML/Robot/RobotConception/include/Commande/CommandeRobot/CommandeRencontrerObst.h
+	"CommandeRobot.h"
 
-1418065123 source:/home/camille/Documents/COURS/SI4/UML/Robot/RobotConception/src/Commande/CommandeRobot/CommandeRepartir.cpp
+1419189653 source:/home/camille/Documents/COURS/SI4/UML/Robot/RobotConception/src/Commande/CommandeRobot/CommandeRepartir.cpp
 	"../../../include/Commande/CommandeRobot/CommandeRepartir.h"
 
-1418064927 /home/camille/Documents/COURS/SI4/UML/Robot/RobotConception/include/Commande/CommandeRobot/CommandeRepartir.h
+1419189664 /home/camille/Documents/COURS/SI4/UML/Robot/RobotConception/include/Commande/CommandeRobot/CommandeRepartir.h
+	"CommandeRobot.h"
 
 1418065129 source:/home/camille/Documents/COURS/SI4/UML/Robot/RobotConception/src/Commande/CommandeRobot/CommandeRobot.cpp
 	"../../../include/Commande/CommandeRobot/CommandeRobot.h"
 
-1419099389 /home/camille/Documents/COURS/SI4/UML/Robot/RobotConception/include/Commande/CommandeRobot/CommandeRobot.h
+1419190135 /home/camille/Documents/COURS/SI4/UML/Robot/RobotConception/include/Commande/CommandeRobot/CommandeRobot.h
 	"../Commande.h"
+	"../../Robot.h"
 
-1418065136 source:/home/camille/Documents/COURS/SI4/UML/Robot/RobotConception/src/Commande/CommandeRobot/CommandeSaisir.cpp
+1419189856 source:/home/camille/Documents/COURS/SI4/UML/Robot/RobotConception/src/Commande/CommandeRobot/CommandeSaisir.cpp
 	"../../../include/Commande/CommandeRobot/CommandeSaisir.h"
 
-1418064170 /home/camille/Documents/COURS/SI4/UML/Robot/RobotConception/include/Commande/CommandeRobot/CommandeSaisir.h
+1419189813 /home/camille/Documents/COURS/SI4/UML/Robot/RobotConception/include/Commande/CommandeRobot/CommandeSaisir.h
+	"CommandeRobot.h"
 
-1418065063 source:/home/camille/Documents/COURS/SI4/UML/Robot/RobotConception/src/Commande/CommandeRobot/CommandeTourner.cpp
+1419196428 source:/home/camille/Documents/COURS/SI4/UML/Robot/RobotConception/src/Commande/CommandeRobot/CommandeTourner.cpp
 	"../../../include/Commande/CommandeRobot/CommandeTourner.h"
 
-1418065014 /home/camille/Documents/COURS/SI4/UML/Robot/RobotConception/include/Commande/CommandeRobot/CommandeTourner.h
+1419189898 /home/camille/Documents/COURS/SI4/UML/Robot/RobotConception/include/Commande/CommandeRobot/CommandeTourner.h
+	"CommandeRobot.h"
 
 1418066528 source:/home/camille/Documents/COURS/SI4/UML/Robot/RobotConception/src/Commande/Invocateur.cpp
 	"../../include/Commande/Invocateur.h"
 
-1418131024 source:/home/camille/Documents/COURS/SI4/UML/Robot/RobotConception/src/Commande/LecteurFichier.cpp
+1419189158 source:/home/camille/Documents/COURS/SI4/UML/Robot/RobotConception/src/Commande/LecteurFichier.cpp
 	<iostream>
 	<fstream>
 	"../../include/Commande/LecteurFichier.h"
@@ -291,9 +299,21 @@
 1416413974 source:/home/camille/Documents/COURS/SI4/UML/Robot/RobotConception/src/Etats/Fige.cpp
 	"../../include/Etats/Fige.h"
 
-1416490729 source:/home/camille/Documents/COURS/SI4/UML/Robot/RobotConception/src/main.cpp
+1419189971 source:/home/camille/Documents/COURS/SI4/UML/Robot/RobotConception/src/main.cpp
 	"../include/Robot.h"
 	"../include/Afficheurs/AfficheurConsole.h"
+	"../include/Commande/LecteurFichier.h"
+	"../include/Commande/CommandeRobot/CommandeAvancer.h"
+	"../include/Commande/CommandeRobot/CommandeDefaire.h"
+	"../include/Commande/CommandeRobot/CommandeEvaluerObst.h"
+	"../include/Commande/CommandeRobot/CommandeFiger.h"
+	"../include/Commande/CommandeRobot/CommandePeserObjet.h"
+	"../include/Commande/CommandeRobot/CommandePoser.h"
+	"../include/Commande/CommandeRobot/CommandeRencontrerObst.h"
+	"../include/Commande/CommandeRobot/CommandeRepartir.h"
+	"../include/Commande/CommandeRobot/CommandeRobot.h"
+	"../include/Commande/CommandeRobot/CommandeSaisir.h"
+	"../include/Commande/CommandeRobot/CommandeTourner.h"
 	<iostream>
 
 1416433026 source:/home/camille/Documents/COURS/SI4/UML/Robot/RobotConception/src/Objet.cpp
@@ -307,7 +327,7 @@
 1416487990 source:/home/camille/Documents/COURS/SI4/UML/Robot/RobotConception/src/Position.cpp
 	"../include/Position.h"
 
-1416480020 source:/home/camille/Documents/COURS/SI4/UML/Robot/RobotConception/src/Robot.cpp
+1419179261 source:/home/camille/Documents/COURS/SI4/UML/Robot/RobotConception/src/Robot.cpp
 	"../include/Robot.h"
 	<iostream>
 
@@ -315,11 +335,10 @@
 	"../include/RobotAAfficher.h"
 	<algorithm>
 
-1419098022 source:/home/camille/Documents/COURS/SI4/UML/Robot/RobotConception/src/Commande/CommandeRobot/CommandeAvancer.cpp
+1419188957 source:/home/camille/Documents/COURS/SI4/UML/Robot/RobotConception/src/Commande/CommandeRobot/CommandeAvancer.cpp
 	"../../../include/Commande/CommandeRobot/CommandeAvancer.h"
 
-1418129695 /home/camille/Documents/COURS/SI4/UML/Robot/RobotConception/include/Commande/CommandeRobot/CommandeAvancer.h
-	<vector>
+1419188131 /home/camille/Documents/COURS/SI4/UML/Robot/RobotConception/include/Commande/CommandeRobot/CommandeAvancer.h
 	"CommandeRobot.h"
 	"../../Position.h"
 

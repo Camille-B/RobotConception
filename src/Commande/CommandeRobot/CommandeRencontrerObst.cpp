@@ -1,7 +1,8 @@
 #include "../../../include/Commande/CommandeRobot/CommandeRencontrerObst.h"
 
+CommandeRencontrerObst::CommandeRencontrerObst() : CommandeRobot("RENCONTREROBSTACLE") {}
 
-CommandeRencontrerObst::CommandeRencontrerObst(Robot* r, const Invocateur* f) : CommandeRobot(_nom_commande,r) {
+CommandeRencontrerObst::CommandeRencontrerObst(Robot* r, const Invocateur* f) : CommandeRobot("RENCONTREROBSTACLE",r) {
     _plot = f->read_int();
 }
 

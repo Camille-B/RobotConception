@@ -1,6 +1,9 @@
 #include "../../../include/Commande/CommandeRobot/CommandeSaisir.h"
 
-CommandeSaisir::CommandeSaisir(Robot* r, const Invocateur* f) : CommandeRobot(_nom_commande,r){
+
+CommandeSaisir::CommandeSaisir() : CommandeRobot("SAISIR"){}
+
+CommandeSaisir::CommandeSaisir(Robot* r, const Invocateur* f) : CommandeRobot("SAISIR",r){
     _objet = new Objet(f->read_int());
 }
 

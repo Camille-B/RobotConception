@@ -25,6 +25,12 @@ class CommandeAvancer : public CommandeRobot
         /*!
          * \brief Constructeur de CommandeAvancer
          */
+        CommandeAvancer();
+
+
+        /*!
+         * \brief Constructeur de CommandeAvancer
+         */
         CommandeAvancer(Robot* r, const Invocateur* f);
 
        /*!
@@ -56,11 +62,6 @@ class CommandeAvancer : public CommandeRobot
          * \brief _pos : la positions actuelle du robot.
          */
         Position* _pos;
-
-        /*!
-         * \brief _nom_commande : clé désignant l'objet CommandeAvancer.
-         */
-        string _nom_commande = "AVANCER";
 };
 
 #endif // COMMANDEAVANCER_H

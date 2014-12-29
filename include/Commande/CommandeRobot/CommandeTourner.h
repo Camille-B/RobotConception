@@ -22,7 +22,13 @@ class CommandeTourner : public CommandeRobot
     public:
 
         /*!
-         * \brief Constructeur de CommandeSaisir
+         * \brief Constructeur par défaut de CommandeTourner
+         */
+        CommandeTourner();
+
+
+        /*!
+         * \brief Constructeur de CommandeTourner
          */
         CommandeTourner(Robot* r, const Invocateur* f);
 
@@ -65,11 +71,6 @@ class CommandeTourner : public CommandeRobot
         */
         Direction _direction;
 
-
-        /*!
-         * \brief _nom_commande : clé désignant l'objet CommandeTourner.
-         */
-        string _nom_commande = "TOURNER";
 };
 
 #endif // COMMANDETOURNER_H

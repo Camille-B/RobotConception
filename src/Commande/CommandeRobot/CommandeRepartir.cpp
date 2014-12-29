@@ -1,6 +1,9 @@
 #include "../../../include/Commande/CommandeRobot/CommandeRepartir.h"
 
-CommandeRepartir::CommandeRepartir(Robot* r, const Invocateur* f) : CommandeRobot(_nom_commande,r){}
+
+CommandeRepartir::CommandeRepartir() : CommandeRobot("REPARTIR"){}
+
+CommandeRepartir::CommandeRepartir(Robot* r, const Invocateur* f) : CommandeRobot("REPARTIR",r){}
 
 void CommandeRepartir::execute(){
     CommandeRobot::_robot->repartir();

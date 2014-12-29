@@ -22,6 +22,12 @@ class CommandeSaisir : public CommandeRobot
     public:
 
         /*!
+         * \brief Constructeur par défaut de CommandeSaisir
+         */
+        CommandeSaisir();
+
+
+        /*!
          * \brief Constructeur de CommandeSaisir
          */
         CommandeSaisir(Robot* r, const Invocateur* f);
@@ -54,11 +60,6 @@ class CommandeSaisir : public CommandeRobot
         */
         Objet* _objet;
 
-
-        /*!
-         * \brief _nom_commande : clé désignant l'objet CommandeSaisir.
-         */
-        string _nom_commande = "SAISIR";
 };
 
 #endif // COMMANDESAISIR_H

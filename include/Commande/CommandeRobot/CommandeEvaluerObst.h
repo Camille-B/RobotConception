@@ -22,9 +22,15 @@ class CommandeEvaluerObst : public CommandeRobot
      public:
 
         /*!
+         * \brief Constructeur par défaut de CommandeEvaluerObst
+         */
+        CommandeEvaluerObst() : CommandeRobot("EVALUEROBSTACLE") {}
+
+
+        /*!
          * \brief Constructeur de CommandeEvaluerObst
          */
-        CommandeEvaluerObst(Robot* r, const Invocateur* f) : CommandeRobot(_nom_commande, r) {}
+        CommandeEvaluerObst(Robot* r, const Invocateur* f) : CommandeRobot("EVALUEROBSTACLE", r) {}
 
        /*!
         * \brief Méthode qui réalise l'execution de CommandeEvaluerObst sur le Robot.
@@ -40,10 +46,6 @@ class CommandeEvaluerObst : public CommandeRobot
         */
         virtual Commande* constructeurVirtuel(Robot* r, const Invocateur* f){return new CommandeEvaluerObst(r,f);}
 
-        /*!
-         * \brief _nom_commande : clé désignant l'objet CommandeEvaluerObst.
-         */
-        string _nom_commande = "EVALUEROBST";
 };
 
 #endif // COMMANDEEVALUEROBST_H

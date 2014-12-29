@@ -14,10 +14,14 @@ LecteurFichier::LecteurFichier(istream* ifs){
 void LecteurFichier::lecture(Robot* r){
     stack<Commande*> empty_stack;
     Commande::_historiqueCommandes.swap(empty_stack);
-
     Commande* commande;
     while(true){
-        if((commande = lecture_commande(r))=0) break;
+        try{
+            commande = lecture_commande(r);
+        } catch (NotFoundException){
+            cout << "Fin de l'éxecution" << endl;
+            break;
+        }
         Commande::_historiqueCommandes.push(commande);
         commande->execute();
     }

@@ -24,7 +24,13 @@ class CommandePeserObjet : public CommandeRobot
         /*!
          * \brief Constructeur de CommandePeserObjet
          */
-        CommandePeserObjet(Robot* r, const Invocateur* f) : CommandeRobot(_nom_commande, r) {}
+        CommandePeserObjet() : CommandeRobot("PESER") {}
+
+
+        /*!
+         * \brief Constructeur de CommandePeserObjet
+         */
+        CommandePeserObjet(Robot* r, const Invocateur* f) : CommandeRobot("PESER", r) {}
 
        /*!
         * \brief Méthode qui réalise l'execution de CommandePeserObjet sur le Robot.
@@ -40,10 +46,6 @@ class CommandePeserObjet : public CommandeRobot
         */
         virtual Commande* constructeurVirtuel(Robot* r, const Invocateur* f){return new CommandePeserObjet(r,f);}
 
-        /*!
-         * \brief _nom_commande : clé désignant l'objet CommandePeserObjet.
-         */
-        string _nom_commande = "PESEROBJET";
 };
 
 #endif // COMMANDEPESEROBJET_H

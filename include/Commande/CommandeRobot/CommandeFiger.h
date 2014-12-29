@@ -22,9 +22,15 @@ class CommandeFiger : public CommandeRobot
     public:
 
         /*!
+         * \brief Constructeur par défaut de CommandeFiger
+         */
+        CommandeFiger() : CommandeRobot("FIGER") {}
+
+
+        /*!
          * \brief Constructeur de CommandeFiger
          */
-        CommandeFiger(Robot* r, const Invocateur* f) : CommandeRobot(_nom_commande, r) {}
+        CommandeFiger(Robot* r, const Invocateur* f) : CommandeRobot("FIGER", r) {}
 
        /*!
         * \brief Méthode qui réalise l'execution de CommandeFiger sur le Robot.
@@ -44,12 +50,6 @@ class CommandeFiger : public CommandeRobot
         */
         virtual Commande* constructeurVirtuel(Robot* r, const Invocateur* f){return new CommandeFiger(r,f);}
 
-    private:
-
-        /*!
-         * \brief _nom_commande : clé désignant l'objet CommandeFiger.
-         */
-        string _nom_commande = "FIGER";
 };
 
 #endif // COMMANDEFIGER_H
