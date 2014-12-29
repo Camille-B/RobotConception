@@ -44,7 +44,7 @@ class CommandePeserObjet : public CommandeRobot
         * \brief Méthode qui retourne un pointeur sur une nouvelle instance de CommandePeserObjet.
         * \return Commande*
         */
-        virtual Commande* constructeurVirtuel(Robot* r, const Invocateur* f){return new CommandePeserObjet(r,f);}
+        virtual Commande* constructeurVirtuel(const Invocateur* f, Robot* r){return new CommandePeserObjet(r,f);}
 
 };
 

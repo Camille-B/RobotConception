@@ -44,7 +44,7 @@ class CommandeRencontrerObst : public CommandeRobot
         * \brief Méthode qui retourne un pointeur sur une nouvelle instance de CommandeRencontrerObst.
         * \return Commande*
         */
-        virtual Commande* constructeurVirtuel(Robot* r, const Invocateur* f){return new CommandeRencontrerObst(r,f);}
+        virtual Commande* constructeurVirtuel(const Invocateur* f, Robot* r){return new CommandeRencontrerObst(r,f);}
 
     private:
 

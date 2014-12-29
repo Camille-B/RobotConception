@@ -48,7 +48,7 @@ class CommandeFiger : public CommandeRobot
         * \brief Méthode qui retourne un pointeur sur une nouvelle instance de CommandeFiger.
         * \return Commande*
         */
-        virtual Commande* constructeurVirtuel(Robot* r, const Invocateur* f){return new CommandeFiger(r,f);}
+        virtual Commande* constructeurVirtuel(const Invocateur* f, Robot* r){return new CommandeFiger(r,f);}
 
 };
 

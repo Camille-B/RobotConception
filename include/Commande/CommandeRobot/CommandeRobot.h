@@ -33,7 +33,7 @@ class CommandeRobot : public Commande
         * \brief Méthode abstraite qui retourne un pointeur sur une nouvelle Commande instanciée.
         * \return Commande*
         */
-        virtual Commande* constructeurVirtuel(Robot*,const Invocateur*) = 0;
+        virtual Commande* constructeurVirtuel(const Invocateur*, Robot*) = 0;
 
        /*!
         * \brief Méthode abstraite qui réalise l'execution d'une Commande.

@@ -53,7 +53,7 @@ class CommandeDefaire : public CommandeRobot
         * \brief Méthode qui retourne un pointeur sur une nouvelle instance de CommandeDefaire.
         * \return Commande*
         */
-        virtual Commande* constructeurVirtuel(Robot* r, const Invocateur* f){return new CommandeDefaire(r,f);}
+        virtual Commande* constructeurVirtuel(const Invocateur* f, Robot* r){return new CommandeDefaire(r,f);}
 };
 
 #endif // COMMANDEDEFAIRE_H

@@ -50,7 +50,7 @@ class CommandePoser : public CommandeRobot
         * \brief Méthode qui retourne un pointeur sur une nouvelle instance de CommandePoser.
         * \return Commande*
         */
-        virtual Commande* constructeurVirtuel(Robot* r, const Invocateur* f){return new CommandePoser(r,f);}
+        virtual Commande* constructeurVirtuel(const Invocateur* f, Robot* r){return new CommandePoser(r,f);}
 
     private:
 

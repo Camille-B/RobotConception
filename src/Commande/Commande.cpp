@@ -15,7 +15,7 @@ Commande* Commande::nouvelleCommande(string s, Robot* r, const Invocateur* f){
     Commande* cmd = Commande::_commandesInscrites[s];
     if(cmd==NULL)
         throw NotFoundException();
-    else return cmd->constructeurVirtuel(r,f);
+    else return cmd->constructeurVirtuel(f,r);
 }
 
 void Commande::desexecute(){

@@ -4,7 +4,9 @@
 # Pour compiler le programme avec la Makefile: 
 
 	-> make set_env //CONSEILLE POUR LA PREMIERE COMPILATION
-					//pour nettoyer l'environnement et tout reconstruire avec la doc, compilation, etc. 
+					//pour nettoyer l'environnement et tout reconstruire, compilation, etc. 
+
+	-> make doc //construction de la documentation avec doxygene (PREREQUIS UBUNTU : "sudo apt-get install doxygen")
 
 	-> make OU make all //compilation simple sans nettoyage
 	
@@ -15,4 +17,4 @@
 
 # Vous pourrez ensuite l'exécuter grâce au fichier binaire : testRobot
 
-# Le lien symbolique doc.html vous conduira vers l'index de la documentation du projet.
+# Le lien symbolique doc.html vous conduira vers l'index de la documentation du projet (si un "make doc" a été effectué).

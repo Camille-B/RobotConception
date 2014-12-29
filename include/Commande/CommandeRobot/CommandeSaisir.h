@@ -51,7 +51,7 @@ class CommandeSaisir : public CommandeRobot
         * \brief Méthode qui retourne un pointeur sur une nouvelle instance de CommandeSaisir.
         * \return Commande*
         */
-        virtual Commande* constructeurVirtuel(Robot* r, const Invocateur* f){return new CommandeSaisir(r,f);}
+        virtual Commande* constructeurVirtuel(const Invocateur* f, Robot* r){return new CommandeSaisir(r,f);}
 
     private:
 

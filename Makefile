@@ -9,7 +9,12 @@ DOCDIR	   = doc/
 DOXYFILE   = $(DOCDIR)Doxyfile
 HTMLDOCDIR = $(DOCDIR)html/
 HTMLDOC    = $(HTMLDOCDIR)index.html
+OBJDIR	   = obj/
+BINDIR	   = bin/
 HTMLDOCREF = doc.html
+TMPFILES   = *~
+IDEFILES   = *.cbp *.depend *.layout *.gitignore
+GITDIR 	   = .git/ 
 
 all: $(EXEC_NAME)
 	
@@ -31,6 +36,21 @@ endif
 ifneq ("$(wildcard $(HTMLDOCDIR))","") 
 	rm -R $(HTMLDOCDIR)	
 endif	
+ifneq ("$(wildcard $(OBJDIR))","") 
+	rm -R $(OBJDIR)	
+endif
+ifneq ("$(wildcard $(BINDIR))","") 
+	rm -R $(BINDIR)	
+endif
+ifneq ("$(wildcard $(GITDIR))","") 
+	rm -R $(GITDIR)	
+endif
+ifneq ("$(wildcard $(TMPFILES))","") 
+	rm $(TMPFILES)	
+endif
+ifneq ("$(wildcard $(IDEFILES))","") 
+	rm $(IDEFILES)	
+endif
 	
 doc: .FORCE
 	$(DOXY) $(DOXYFILE)
