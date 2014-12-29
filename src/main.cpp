@@ -31,6 +31,9 @@
 #include "../include/Robot.h"
 #include "../include/Afficheurs/AfficheurConsole.h"
 #include "../include/Commande/LecteurFichier.h"
+#include "../include/Commande/CommandeAppeler.h"
+#include "../include/Commande/CommandeFinMacro.h"
+#include "../include/Commande/CommandeRobot/CommandeDefMacro.h"
 #include "../include/Commande/CommandeRobot/CommandeAvancer.h"
 #include "../include/Commande/CommandeRobot/CommandeDefaire.h"
 #include "../include/Commande/CommandeRobot/CommandeEvaluerObst.h"
@@ -73,6 +76,9 @@ int main()
     CommandeRepartir h;
     CommandeSaisir k;
     CommandeTourner m;
+    CommandeDefMacro n;
+    CommandeFinMacro o;
+    CommandeAppeler p;
 
 
     l.lecture(&robot);

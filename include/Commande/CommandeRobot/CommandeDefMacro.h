@@ -10,6 +10,9 @@
 #define COMMANDEDEFMACRO_H
 
 #include "CommandeRobot.h"
+#include "../CommandeFinMacro.h"
+#include "../CommandeAppeler.h"
+
 
 /*!
  * \class CommandeDefMacro

@@ -49,6 +49,12 @@ class CommandeAppeler : public Commande
         */
         virtual void desexecute();
 
+       /*!
+        * \brief Override de la méthode abstraite provenant de la classe Commande.
+        * \return Commande*
+        */
+        virtual Commande* constructeurVirtuel(const Invocateur* i, Robot * = 0) {return new CommandeAppeler(i);}
+
     private:
 
        /*!
@@ -60,6 +66,8 @@ class CommandeAppeler : public Commande
         * \brief Nom de la Macro
         */
         string _nom;
+
+        CommandeAppeler(const Invocateur* i);
 
 };
 
