@@ -23,3 +23,6 @@ EtatRobot* EnChargeFacePlot::peser(){
     return EnChargeFacePlot::instance();
 }
 
+EtatRobot* EnChargeFacePlot::evaluerPlot(){
+    return EnChargeFacePlot::instance();
+}

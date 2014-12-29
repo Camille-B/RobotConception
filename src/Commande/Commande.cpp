@@ -6,6 +6,7 @@ stack<Commande*> Commande::_historiqueCommandes;
 
 
 Commande::Commande(string s){
+    Commande::_name = s;
     Commande::_commandesInscrites[s] = this;
 }
 

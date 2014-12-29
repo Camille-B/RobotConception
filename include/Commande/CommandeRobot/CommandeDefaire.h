@@ -38,6 +38,8 @@ class CommandeDefaire : public CommandeRobot
         */
         virtual void execute(){
             try{
+                Commande::_historiqueCommandes.pop();
+                cout << "Commande à défaire : " << reinterpret_cast<Commande*>(Commande::_historiqueCommandes.top())->_name << "\n" << endl;
                 Commande::_historiqueCommandes.top()->desexecute();
                 Commande::_historiqueCommandes.pop();
             } catch(UnableToReverseException e){

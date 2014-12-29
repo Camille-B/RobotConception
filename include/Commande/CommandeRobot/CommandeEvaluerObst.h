@@ -37,7 +37,8 @@ class CommandeEvaluerObst : public CommandeRobot
         * \return void
         */
         virtual void execute(){
-            CommandeRobot::_robot->evaluerPlot();
+            double _res = CommandeRobot::_robot->evaluerPlot();
+            cout << "Hauteur du plot : " << _res << "\n" << endl;
         }
 
        /*!

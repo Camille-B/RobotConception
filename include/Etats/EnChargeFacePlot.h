@@ -49,6 +49,15 @@ class EnChargeFacePlot : public EnRoute
         virtual EtatRobot* peser();
 
         /*!
+         * \brief Retourne la hauteur d'un plot.
+         *
+         * Retourne un pointeur vers l'instance de l'état EnChargeFacePlot et autorise l'action auprès du Robot.
+         *
+         * \return EtatRobot*
+         */
+        virtual EtatRobot* evaluerPlot();
+
+        /*!
         * \brief Nom de l'état courant
         * \return std::string
         */

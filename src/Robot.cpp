@@ -38,7 +38,6 @@ void Robot::poser(){
         trace("##### Robot::poser() #####");
 		etat_courant(etat_courant()->poser());
 		objet(0);
-		plot(0);
         notifier();
 	}catch(ImpossibleToExecute e){
 		trace("Impossible to execute poser");
@@ -71,7 +70,6 @@ void Robot::saisir(Objet o){
         trace("##### Robot::saisir() #####");
 		etat_courant(etat_courant()->saisir());
 		objet(o);
-		plot(0);
         notifier();
 	}catch(ImpossibleToExecute e){
 		trace("Impossible to execute saisir");
@@ -81,6 +79,8 @@ void Robot::saisir(Objet o){
 void Robot::tourner(Direction dir){
 	try{
         trace("##### Robot::tourner() #####");
+        if(etat_courant()->nom_etat()=="EnChargeFacePlot" || etat_courant()->nom_etat()=="AVideFacePlot")
+            plot(0);
 		etat_courant(etat_courant()->tourner());
 		direction(dir);
 		notifier();

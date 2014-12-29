@@ -81,6 +81,11 @@ class Commande
         * \return void
         */
         virtual void desexecute();
+
+       /*!
+        * \brief Nom de la commande
+        */
+        string _name ;
 };
 
 /*!

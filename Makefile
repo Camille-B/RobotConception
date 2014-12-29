@@ -15,8 +15,6 @@ all: $(EXEC_NAME)
 	
 set_env: mrproper
 	make all
-	make doc 
-
 
 clean:
 ifneq ("$(wildcard $(EXEC_NAME))","") 
