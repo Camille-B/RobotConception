@@ -54,7 +54,7 @@ int main()
 
     Objet objet(25);
     Plot plot(5);
-    string filename = "../COMMANDES.txt";
+    string filename = "COMMANDES.txt";
 
     Robot robot = Robot(EtatRobot::instanceInit(), SOUTH, Position(5,5));
     robot.attacherAfficheur(new AfficheurConsole(&robot));

@@ -13,8 +13,8 @@ OBJDIR	   = obj/
 BINDIR	   = bin/
 HTMLDOCREF = doc.html
 TMPFILES   = *~
-IDEFILES   = *.cbp *.depend *.layout *.gitignore
-GITDIR 	   = .git/ 
+IDEFILES   = *.cbp *.depend *.layout
+GITDIR 	   = .git/ *.gitignore
 
 all: $(EXEC_NAME)
 	
@@ -42,15 +42,21 @@ endif
 ifneq ("$(wildcard $(BINDIR))","") 
 	rm -R $(BINDIR)	
 endif
-ifneq ("$(wildcard $(GITDIR))","") 
-	rm -R $(GITDIR)	
-endif
 ifneq ("$(wildcard $(TMPFILES))","") 
 	rm $(TMPFILES)	
 endif
-ifneq ("$(wildcard $(IDEFILES))","") 
-	rm $(IDEFILES)	
-endif
+#######################################################################################################
+# Uncomment the following lines to clean the .gitignore file and the .git directory from this project.#
+#######################################################################################################
+#ifneq ("$(wildcard $(GITDIR))","") 
+#	rm -Rf $(GITDIR)	
+#endif
+#######################################################################################################
+# Uncomment the following lines if you are using CodeBlocks IDE                                       #
+#######################################################################################################
+#ifneq ("$(wildcard $(IDEFILES))","") 
+#	rm -Rf $(IDEFILES)	
+#endif
 	
 doc: .FORCE
 	$(DOXY) $(DOXYFILE)
