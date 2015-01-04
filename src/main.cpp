@@ -17,6 +17,14 @@
  * \section titre3 Diagramme de classes Q3 : Externaliser la trace
  *  <br/>
  *  \image  html 3.jpg
+ *  <br/><hr/><br/>
+ * \section titre4 Diagramme de classes Q4 : Création des commandes
+ *  <br/>
+ *  \image  html 4.jpg
+ *  <br/><hr/><br/>
+ * \section titre5 Diagramme de classes Q5 : Macros Commandes
+ *  <br/>
+ *  \image  html 5.jpg
  *  <br/>
  */
 
